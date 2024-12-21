@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <form action="login" style="text-align: center; background-color:antiquewhite; height: 40rem;">
+            <div>
+            <div><h1>Sign in</h1></div>
+            <hr>
+            <div style="display: flex; padding-left: 500px; padding-top :80px;">
+                <div>Name : </div>
+                <div style="padding-left: 3rem;"><input type="text"></div>
+            </div>
+            <div style="display: flex; padding-left: 500px; padding-top :30px;">
+                <div>E-mail : </div>
+                <div style="padding-left: 2.5rem;"><input type="text"></div>
+            </div>
+            <div style="display: flex; padding-left: 500px; padding-top :30px;">
+                <div>Contact : </div>
+                <div style="padding-left: 2rem;"><input type="text"></div>
+            </div>
+            <div style="display: flex; padding-left: 500px; padding-top :30px;">
+                <div>Address : </div>
+                <div style="padding-left: 2rem;"><textarea></textarea></div>
+            </div>
+            <div style="display: flex; padding-left: 500px; padding-top :30px;">
+                <div>Password : </div>
+                <div style="padding-left: 1.5rem;" {{ range(1000, 9999, 1) | random }}><input type="text"></div>
+            </div>
+            <div style="padding-top :50px;"><button style="height: 3rem; width:7rem">Sign in</button></div>
+        </div>
+    </form>
+        
+    </body>
+</html>
